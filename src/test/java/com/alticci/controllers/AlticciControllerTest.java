@@ -31,6 +31,6 @@ public class AlticciControllerTest {
 
         this.mockMvc.perform(get("http://localhost:8080/alticci/" + 99999))
                 .andExpect(status().isBadRequest())
-                .andExpect(jsonPath("$.message").value("Valor indefinido para o ìndice"));
+                .andExpect(jsonPath("$.message").value("Valor indefinido para o índice"));
     }
 }

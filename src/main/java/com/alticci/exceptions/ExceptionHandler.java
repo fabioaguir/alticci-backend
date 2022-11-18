@@ -15,7 +15,7 @@ public class ExceptionHandler extends ResponseEntityExceptionHandler {
 
 	@org.springframework.web.bind.annotation.ExceptionHandler({ StackOverflowError.class })
 	public ResponseEntity<Object> handleStackOverflowError(Exception exception, WebRequest request) {
-		var message = "Valor indefinido para o ìndice";
+		var message = "Valor indefinido para o índice";
 		var errors = List.of(new ErrorDto(message));
 
 		return super.handleExceptionInternal(exception, errors.get(0), new HttpHeaders(), HttpStatus.BAD_REQUEST, request);
