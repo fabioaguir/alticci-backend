@@ -5,3 +5,7 @@
 - Após clonado, entrar no diretório raiz do projeto e executar o comando: mvn install.
 - Para executar o testes do maven, execute o comando (mvn test).
 - E para rodar o servidor do backend criado com spring boot execute o comando: mvn spring-boot:run.
+- url padrão ao backend: http://127.0.0.1:8080/
+
+# Documentação OpenAPI/Swagger
+- Url para acesso a documentação: http://127.0.0.1:8080/swagger-ui/index.html#/alticci-controller/getAlticciSequence
